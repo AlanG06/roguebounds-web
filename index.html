@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roguebounds</title>
+  <meta name="description" content="Roguebounds: acción y plataformas en 2D con alma de roguelike. Viaja a los mundos errantes, forja tu equipo con criolita y repara los Sellos antes de que la Herrumbre los rompa.">
+  <link rel="icon" type="image/png" href="img/icono.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="barra">
+    <a class="barra-marca" href="#inicio"><img src="img/icono.png" alt="" width="28" height="28"><span>Roguebounds</span></a>
+    <button class="barra-menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="barra-enlaces">
+      <a href="#juego">El juego</a>
+      <a href="#mundos">Mundos</a>
+      <a href="#lore">Lore</a>
+      <a href="#galeria">Galería</a>
+      <a href="#tecnico">Especificaciones</a>
+      <a href="#alpha" class="destacado">Alpha</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Portada -->
+    <section id="inicio" class="portada">
+      <div class="portada-fondo" style="background-image:url('img/ombra.jpg')"></div>
+      <div class="portada-contenido">
+        <img class="logo" src="img/logo.png" alt="Roguebounds">
+        <p class="lema">Repara los Sellos antes de que la Herrumbre los rompa.</p>
+        <p class="sublema">Acción y plataformas en 2D con alma de roguelike. Solo o con hasta tres amigos.</p>
+        <div class="botones">
+          <a class="boton boton-principal" href="#alpha">Acceder a la alpha</a>
+          <a class="boton boton-apoyo" href="#apoyar">Apoyar el proyecto</a>
+        </div>
+        <p class="estado"><span class="punto"></span> En desarrollo · Alpha cerrada</p>
+        <p class="estado-nota">Arte de armas y personajes provisional: se rediseñará por completo para la beta · <a href="#aviso">Más información</a></p>
+      </div>
+    </section>
+
+    <!-- El juego -->
+    <section id="juego" class="seccion">
+      <h2>El juego</h2>
+      <p class="entradilla">Eres un guardián de la Orden del Eslabón. Desde la nave bajas a mundos sellados por la Herrumbre, recoges lo que puedas, lo canalizas en energía pura y forjas con ella tu equipo para volver a bajar más fuerte.</p>
+      <div class="rejilla rasgos">
+        <article class="panel rasgo">
+          <span class="rasgo-icono">◆</span>
+          <h3>Tres mundos, cada partida distinta</h3>
+          <p>Un astillero en ruinas, un huerto de cristal y una ciudad colgada sobre el abismo. Cada uno con sus enemigos, su reto y su jefe.</p>
+        </article>
+        <article class="panel rasgo">
+          <span class="rasgo-icono">⚔</span>
+          <h3>Cuatro disciplinas</h3>
+          <p>Baluarte, Filo, Rastreador o Cantor. Mazas, sables de criolita, pistolas de pulso y bastones; cualquier clase puede usar cualquier arma.</p>
+        </article>
+        <article class="panel rasgo">
+          <span class="rasgo-icono">✦</span>
+          <h3>Forja con orbes</h3>
+          <p>Canaliza lo que traes en orbes de energía y combínalos de tres en tres. Las recetas se descubren probando, y una forja crítica puede darte un arma mejor.</p>
+        </article>
+        <article class="panel rasgo">
+          <span class="rasgo-icono">☍</span>
+          <h3>Cooperativo hasta 4</h3>
+          <p>Conexión directa por IP, sin servicios de pago. Si un compañero cae, mantén pulsado para levantarlo. Cada uno recibe su propio botín.</p>
+        </article>
+        <article class="panel rasgo">
+          <span class="rasgo-icono">≋</span>
+          <h3>La Marea</h3>
+          <p>Cada mundo tiene un nivel de corrupción. Cuanto más alto, más duros los enemigos y mejor el botín. Limpiarlo es cosa tuya.</p>
+        </article>
+        <article class="panel rasgo">
+          <span class="rasgo-icono">⌂</span>
+          <h3>Sal cuando quieras</h3>
+          <p>Vence al jefe y activa el Sello para progresar, o vuelve a la nave por el pad de llegada con lo que hayas recogido.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mundos -->
+    <section id="mundos" class="seccion">
+      <h2>Los mundos</h2>
+      <div class="mundos">
+        <article class="panel mundo" style="--tono: #ff8f2e">
+          <img src="img/vareth.jpg" alt="Vareth, el astillero, con sus máquinas y criaturas de la Herrumbre" loading="lazy">
+          <div class="mundo-texto">
+            <p class="mundo-numero">Mundo 1 · Peligro bajo</p>
+            <h3>Vareth, el Astillero Callado</h3>
+            <p>Estructuras industriales corroídas, calderas y tuberías. Destruye las Raíces de Herrumbre para abrir la guarida de su guardián.</p>
+            <p class="mundo-jefe">Jefe: <strong>El Forjador Herrumbrado</strong></p>
+          </div>
+        </article>
+        <article class="panel mundo" style="--tono: #4fe0c8">
+          <img src="img/sarn.jpg" alt="Sarn, el huerto de cristal, con sus criaturas" loading="lazy">
+          <div class="mundo-texto">
+            <p class="mundo-numero">Mundo 2 · Peligro medio</p>
+            <h3>Sarn, el Huerto de Cristal</h3>
+            <p>Bosques de criolita bajo un cielo claro. Gira prismas y lleva la luz a sus receptores para abrir el paso al huerto.</p>
+            <p class="mundo-jefe">Jefe: <strong>La Jardinera</strong></p>
+          </div>
+        </article>
+        <article class="panel mundo" style="--tono: #a882ff">
+          <img src="img/ombra_puente.jpg" alt="Ombra, la ciudad colgante, con su puente de cadenas" loading="lazy">
+          <div class="mundo-texto">
+            <p class="mundo-numero">Mundo 3 · Peligro alto</p>
+            <h3>Ombra, la Ciudad Colgante</h3>
+            <p>Islas y edificios suspendidos de cadenas sobre un abismo sin fondo. Toca sus tres campanas en el orden de la partitura para tender el puente al campanario.</p>
+            <p class="mundo-jefe">Jefe: <strong>El Sintonizador Olvidado</strong></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lore -->
+    <section id="lore" class="seccion lore">
+      <h2>El lore</h2>
+      <div class="lore-columnas">
+        <div class="panel lore-bloque">
+          <h3>Los Forjadores</h3>
+          <p>Una civilización antigua descubrió la <em>criolita</em>, un cristal azul que guarda energía, y con ella levantó maravillas: ciudades flotantes, armas de luz, máquinas que pensaban. También descubrió, demasiado tarde, lo que la criolita atrae.</p>
+        </div>
+        <div class="panel lore-bloque">
+          <h3>La Herrumbre</h3>
+          <p>Nadie sabe si es una plaga, una criatura o una voluntad. Se alimenta de la criolita y la pudre: donde toca, el azul se vuelve ámbar, la materia se deforma y lo vivo se retuerce. Devoró mundo tras mundo.</p>
+        </div>
+        <div class="panel lore-bloque">
+          <h3>El Gran Sellado</h3>
+          <p>Incapaces de destruirla, los Forjadores la encerraron: envolvieron cada mundo infectado en un Sello de cadenas de criolita y lo lanzaron a la deriva. Son los <em>mundos errantes</em>. Después, los Forjadores desaparecieron.</p>
+        </div>
+        <div class="panel lore-bloque">
+          <h3>La Orden del Eslabón</h3>
+          <p>Siglos después, sus herederos fundaron una orden para mantener los Sellos. Cada guardián jura atado a un eslabón de criolita: son los <em>Vinculados</em>. Y los Sellos fallan más rápido de lo que la Orden puede repararlos.</p>
+        </div>
+      </div>
+      <blockquote class="cita">«...Aquí Unidad de Enlace C-09. Solicito asistencia. Aquí Unidad de Enlace C-09...»<span>— Señal interceptada desde Ombra</span></blockquote>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="seccion">
+      <h2>Galería</h2>
+      <div class="galeria">
+        <button class="foto" data-titulo="La nave de la Orden: forja, canalización, mercado y misiones"><img src="img/nave.jpg" alt="La nave de la Orden" loading="lazy"></button>
+        <button class="foto" data-titulo="Vareth: máquinas y criaturas de la Herrumbre"><img src="img/vareth.jpg" alt="Vareth" loading="lazy"></button>
+        <button class="foto" data-titulo="Sarn: el huerto de cristal"><img src="img/sarn.jpg" alt="Sarn" loading="lazy"></button>
+        <button class="foto" data-titulo="La Jardinera, guardiana del huerto"><img src="img/jardinera.jpg" alt="La Jardinera" loading="lazy"></button>
+        <button class="foto" data-titulo="Ombra: el poblado colgante"><img src="img/ombra.jpg" alt="Ombra, el poblado" loading="lazy"></button>
+        <button class="foto" data-titulo="Ombra: una de sus campanas"><img src="img/ombra_campana.jpg" alt="Una campana de Ombra" loading="lazy"></button>
+        <button class="foto" data-titulo="Ombra: las salas dentro de los bloques"><img src="img/ombra_sala.jpg" alt="Una sala de Ombra" loading="lazy"></button>
+        <button class="foto" data-titulo="El Sintonizador Olvidado, en el Pináculo"><img src="img/sintonizador.jpg" alt="El Sintonizador Olvidado" loading="lazy"></button>
+      </div>
+      <p class="nota">Capturas de la versión en desarrollo. Algunos sprites de armas y personajes se parecen a los de Roguelands: son provisionales y se rediseñarán por completo para la beta.</p>
+    </section>
+
+    <!-- Especificaciones -->
+    <section id="tecnico" class="seccion">
+      <h2>Especificaciones técnicas</h2>
+      <div class="panel tabla-envoltorio">
+        <table class="tabla">
+          <tbody>
+            <tr><th>Género</th><td>Acción y plataformas 2D · Roguelike</td></tr>
+            <tr><th>Estado</th><td>Alpha cerrada (en desarrollo)</td></tr>
+            <tr><th>Plataforma</th><td>Windows 10 / 11, 64 bits</td></tr>
+            <tr><th>Gráficos</th><td>Tarjeta compatible con DirectX 11</td></tr>
+            <tr><th>Espacio en disco</th><td>Unos 200 MB</td></tr>
+            <tr><th>Modos</th><td>Un jugador · Cooperativo en línea hasta 4 jugadores</td></tr>
+            <tr><th>Red</th><td>Conexión directa por IP (puerto 7777 por defecto). Sin cuentas ni servicios de pago</td></tr>
+            <tr><th>Controles</th><td>Teclado y ratón</td></tr>
+            <tr><th>Idioma</th><td>Español</td></tr>
+            <tr><th>Motor</th><td>Unity 6</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <details class="panel controles">
+        <summary>Ver controles</summary>
+        <ul>
+          <li><kbd>A</kbd> <kbd>D</kbd> moverse · <kbd>Espacio</kbd> saltar (también en el aire) · <kbd>Q</kbd> dash</li>
+          <li><kbd>Clic izq.</kbd> atacar · <kbd>Clic der.</kbd> desenfundar · <kbd>Mayús</kbd> guardia</li>
+          <li><kbd>E</kbd> usar, hablar, abrir · <kbd>B</kbd> baliza de retorno · <kbd>1</kbd>–<kbd>6</kbd> objetos</li>
+          <li><kbd>Tab</kbd> mochila · <kbd>Esc</kbd> pausa y ajustes · <kbd>F3</kbd> sala de la partida en red</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- Apoyar -->
+    <section id="apoyar" class="seccion apoyar">
+      <div class="panel apoyar-caja">
+        <h2>Apoya el proyecto</h2>
+        <p>Roguebounds lo hace una sola persona. Si te gusta lo que ves y quieres que siga creciendo (más mundos, más jefes, más armas), puedes echar una mano con una donación. Cualquier cantidad ayuda.</p>
+        <a class="boton boton-apoyo boton-grande" id="boton-donar" href="#" target="_blank" rel="noopener">♥ Donar</a>
+        <p class="nota" id="nota-donar"></p>
+      </div>
+    </section>
+
+    <!-- Alpha -->
+    <section id="alpha" class="seccion">
+      <h2>Acceso a la alpha</h2>
+      <p class="entradilla">La alpha incluye los tres mundos, sus jefes, la forja completa y el cooperativo. Todavía es una versión de pruebas: puede haber fallos y el equilibrio cambiará.</p>
+      <aside class="aviso" id="aviso" role="note">
+        <strong>Aviso sobre el arte de la alpha</strong>
+        <p>Roguebounds está inspirado en <em>Roguelands</em>, y algunos sprites de armas y de personajes de la alpha se parecen a los de ese juego. Son provisionales: <strong class="en-linea">todos se rediseñarán por completo, con arte original, para la beta.</strong></p>
+        <p>Roguebounds es un proyecto independiente y no está afiliado con Roguelands ni con sus creadores.</p>
+      </aside>
+      <div class="rejilla pasos">
+        <article class="panel paso">
+          <span class="paso-numero">1</span>
+          <h3>Consigue tu acceso</h3>
+          <p id="texto-acceso">Las inscripciones para la alpha se abrirán muy pronto. Las plazas serán limitadas.</p>
+          <a class="boton boton-principal" id="boton-alpha" href="#" target="_blank" rel="noopener">Pedir acceso</a>
+        </article>
+        <article class="panel paso">
+          <span class="paso-numero">2</span>
+          <h3>Descarga e instala</h3>
+          <p>Descomprime la carpeta donde quieras y abre <code>Roguebounds.exe</code>. No necesita instalación. Si Windows avisa de que el programa es desconocido, pulsa «Más información» y «Ejecutar de todas formas».</p>
+        </article>
+        <article class="panel paso">
+          <span class="paso-numero">3</span>
+          <h3>Juega con amigos</h3>
+          <p>Quien hospeda elige <em>Multijugador → Hostear partida</em> y comparte su IP. Los demás eligen <em>Unirse a partida</em> y la escriben con el puerto (7777). Fuera de tu red local, quien hospeda tiene que abrir ese puerto en su router.</p>
+        </article>
+        <article class="panel paso">
+          <span class="paso-numero">4</span>
+          <h3>Cuéntanos qué tal</h3>
+          <p>Lo que falle, lo que no se entienda o lo que te parezca demasiado difícil o fácil. Con una captura, mejor. Así se arregla antes de la beta.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <img src="img/icono.png" alt="" width="40" height="40">
+    <p>Roguebounds · Al's Productions</p>
+    <p class="nota">© <span id="anio"></span> · Proyecto independiente, sin afiliación con Roguelands ni con sus creadores. El arte provisional de la alpha se sustituirá por diseños originales en la beta.</p>
+  </footer>
+
+  <!-- Visor de la galería -->
+  <div class="visor" hidden>
+    <button class="visor-cerrar" aria-label="Cerrar">×</button>
+    <button class="visor-flecha visor-anterior" aria-label="Anterior">‹</button>
+    <figure>
+      <img alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="visor-flecha visor-siguiente" aria-label="Siguiente">›</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
