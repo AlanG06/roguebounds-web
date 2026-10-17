@@ -6,9 +6,9 @@ const AJUSTES = {
   // Página de donaciones (Ko-fi, PayPal, Patreon...).
   donar: "",
   // Dónde se pide o se descarga la alpha (formulario, Discord, enlace de descarga...).
-  alpha: "",
+  alpha: "https://discord.gg/FWEcQrNysD",
   // Texto del paso 1 de la alpha cuando hay enlace.
-  textoAcceso: "Pide tu acceso con el botón. Las plazas de la alpha son limitadas.",
+  textoAcceso: "Únete al Discord de Roguebounds y pide tu clave de la alpha. Las plazas son limitadas.",
 };
 // ============================================
 
