@@ -61,6 +61,33 @@ code, kbd {
   color: #fff;
 }
 
+/* ---------- Franja de la alpha ---------- */
+.franja-alpha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 12px;
+  padding: 8px 20px;
+  background: linear-gradient(90deg, rgba(0, 229, 255, 0.1), rgba(168, 130, 255, 0.14), rgba(0, 229, 255, 0.1));
+  border-bottom: 1px solid rgba(0, 229, 255, 0.35);
+  font-size: 13px;
+  color: var(--texto);
+  text-align: center;
+}
+.franja-alpha a { color: var(--cian); font-weight: 500; text-decoration: none; white-space: nowrap; }
+.franja-alpha a:hover { text-decoration: underline; }
+.etiqueta-alpha {
+  font-family: var(--titulo);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #04121a;
+  background: var(--cian);
+  padding: 2px 8px;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
 /* ---------- Barra de arriba ---------- */
 .barra {
   position: sticky;
@@ -131,6 +158,39 @@ code, kbd {
 .aviso p + p { margin-top: 8px; color: var(--tenue); font-size: 15px; }
 .aviso .en-linea { display: inline; font-family: var(--cuerpo); font-weight: 700; color: #fff; margin: 0; }
 .estado-nota a { color: var(--oro); }
+
+/* Aviso de la alpha: el mismo recuadro, en cian, con la lista de lo que puede cambiar. */
+.aviso-alpha { background: rgba(0, 229, 255, 0.06); border-color: var(--cian); }
+.aviso-alpha > strong { color: var(--cian); }
+.cambios {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 8px;
+  margin: 14px 0 4px;
+  padding: 0;
+}
+.cambios li {
+  position: relative;
+  padding: 7px 10px 7px 26px;
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  font-size: 14px;
+  color: var(--texto);
+}
+.cambios li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin-top: -3.5px;
+  background: var(--cian);
+  box-shadow: 0 0 6px var(--cian);
+}
+.aviso-alpha + .aviso { margin-top: -14px; }
+[id] { scroll-margin-top: 80px; }
 
 @keyframes flotar { 50% { transform: translateY(-8px); } }
 @keyframes latir { 50% { opacity: 0.35; } }

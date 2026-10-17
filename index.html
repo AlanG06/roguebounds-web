@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="franja-alpha" role="note">
+    <span class="etiqueta-alpha">Alpha</span>
+    <span>Roguebounds está en fase alpha: el contenido puede cambiar y no representa el producto final.</span>
+    <a href="#aviso-alpha">Más información</a>
+  </div>
+
   <header class="barra">
     <a class="barra-marca" href="#inicio"><img src="img/icono.png" alt="" width="28" height="28"><span>Roguebounds</span></a>
     <button class="barra-menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
@@ -151,7 +157,7 @@
         <button class="foto" data-titulo="Ombra: las salas dentro de los bloques"><img src="img/ombra_sala.jpg" alt="Una sala de Ombra" loading="lazy"></button>
         <button class="foto" data-titulo="El Sintonizador Olvidado, en el Pináculo"><img src="img/sintonizador.jpg" alt="El Sintonizador Olvidado" loading="lazy"></button>
       </div>
-      <p class="nota">Capturas de la versión en desarrollo. Algunos sprites de armas y personajes se parecen a los de Roguelands: son provisionales y se rediseñarán por completo para la beta.</p>
+      <p class="nota">Capturas de la versión alpha: no representan el producto final. Algunos sprites de armas y personajes se parecen a los de Roguelands: son provisionales y se rediseñarán por completo para la beta.</p>
     </section>
 
     <!-- Especificaciones -->
@@ -198,6 +204,21 @@
     <section id="alpha" class="seccion">
       <h2>Acceso a la alpha</h2>
       <p class="entradilla">La alpha incluye los tres mundos, sus jefes, la forja completa y el cooperativo. Todavía es una versión de pruebas: puede haber fallos y el equilibrio cambiará.</p>
+      <aside class="aviso aviso-alpha" id="aviso-alpha" role="note">
+        <strong>Versión alpha: no es el producto final</strong>
+        <p>Lo que se juega en la alpha es una versión temprana y en pleno desarrollo. <strong class="en-linea">Todo su contenido puede cambiar, ampliarse o eliminarse antes del lanzamiento oficial</strong>, y no refleja necesariamente cómo será el juego terminado.</p>
+        <ul class="cambios" aria-label="Contenido sujeto a cambios">
+          <li>Mundos y niveles</li>
+          <li>Jefes y enemigos</li>
+          <li>Armas, armaduras y escudos</li>
+          <li>Recetas y materiales</li>
+          <li>Equilibrio y dificultad</li>
+          <li>Historia y personajes</li>
+          <li>Arte, música y sonido</li>
+          <li>Interfaz y controles</li>
+        </ul>
+        <p>Puede haber fallos, y el progreso de la alpha podría no conservarse en versiones posteriores. Gracias por ayudarnos a darle forma.</p>
+      </aside>
       <aside class="aviso" id="aviso" role="note">
         <strong>Aviso sobre el arte de la alpha</strong>
         <p>Roguebounds está inspirado en <em>Roguelands</em>, y algunos sprites de armas y de personajes de la alpha se parecen a los de ese juego. Son provisionales: <strong class="en-linea">todos se rediseñarán por completo, con arte original, para la beta.</strong></p>
@@ -232,7 +253,7 @@
   <footer class="pie">
     <img src="img/icono.png" alt="" width="40" height="40">
     <p>Roguebounds · Al's Productions</p>
-    <p class="nota">© <span id="anio"></span> · Proyecto independiente, sin afiliación con Roguelands ni con sus creadores. El arte provisional de la alpha se sustituirá por diseños originales en la beta.</p>
+    <p class="nota">© <span id="anio"></span> · Proyecto independiente, sin afiliación con Roguelands ni con sus creadores. Roguebounds está en fase alpha: su contenido puede cambiar antes del lanzamiento oficial, y el arte provisional se sustituirá por diseños originales en la beta.</p>
   </footer>
 
   <!-- Visor de la galería -->
